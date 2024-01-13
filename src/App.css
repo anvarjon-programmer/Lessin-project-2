@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sideBar{
+  width: 150%;
+  height: 100vh;
+  background-color: #000016;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
+  gap: 10px;
+  
+}
+#card-title{
+  margin-top: -15px;
+}
+.links{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.containers{
+  max-width: 700px;
+  margin: 0 auto;
+}
+#card{
+  /* background-color: aliceblue;
+  box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2) */
+  height: 300px;
+}
+.navLink{
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+  height: 45px;
+  background-color: crimson;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.btn-Wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.active_btn{
+  background-color: crimson;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.row{
+  /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; */
+    row-gap: 10px;
+    margin-top: 50px;
+}
+.car-dimg{
+  width: 100%;
+  height: 250px;
+}
+.cardbody-inner{
+  padding: 0 20px;
+}
+.price-rating{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrappers{
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+}
+.App{
+  display: flex;
+  justify-content: space-between;
+  gap: 210px;
+}
+.dibvar-wraper{
+  position: fixed;
+}
+.navLink-card{
+  /* height: 45px;
+  border-radius: 10px;
+  padding: 10px 70px;
+  text-decoration: none;
+  background-color: #11B286;
+  margin-top: 20px; */
+
+}
+.singleCard-img{
+  max-width: 300px;
+}
+.singleCard-img img{
+  width: 100%;
+}
+.singleCard-wraper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+.singleCard-body{
+  width: 50%;
+}
+.singleCard-title{
+  font-size: 28px;
+}
+.singleCard-titleProce{
+  margin: 10px 0;
+}
+.singleCard-titleProce h4{
+    font-size: 22px;
+}
+.singleCard-text{
+  font-size: 16px;
+}
+.line{
+  height: 1px;
+  background-color: gray;
+  width: 100%;
+  margin: 8px 0;
+  box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2)
+}
+
+.add-card{
+  font-size: 15px;
+  border: none;
+  background-color: #11B286;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+}
+.car-img-top{
+  width: 100%;
+  height: 200px;
+}
+.pagination-wraper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 70px;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 15px 0;
 }
