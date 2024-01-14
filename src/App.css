@@ -29,6 +29,12 @@
   max-width: 700px;
   margin: 0 auto;
 }
+#card-container{
+  margin-top: 20px;
+}
+#single_container{
+  margin-top: 50px;
+}
 #card{
   /* background-color: aliceblue;
   box-shadow: 0 15px 10px 0 rgba(0,0,0,0.2) */

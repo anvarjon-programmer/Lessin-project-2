@@ -8,7 +8,6 @@ export const Users = () => {
   useEffect(()=>{
     axios.get("https://api.github.com/users").then(response=>{
       setContries(response.data)
-      console.log(response);
     })
   },[]);
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -16,7 +15,7 @@ export const Users = () => {
   const currentCountries = contries.slice(indexOffirstItem,indexOfLastItem);
   const paginate = PagesNumber => setCurrentPage(PagesNumber);
   return (
-    <div className='container'>
+    <div className='container' id='card-container'>
         <div className="row">
               {
                 currentCountries.map((items,index)=>{

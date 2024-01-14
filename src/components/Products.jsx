@@ -7,7 +7,6 @@ export const Products = () => {
     useEffect(()=>{
         axios.get(`https://fakestoreapi.com/products`).then((res)=>{
             setProducts(res.data)
-           console.log(res.data);
         })
     },[])
   return (

@@ -12,7 +12,7 @@ export const SingleProduct = () => {
     })
   },[])
   return (
-    <div className="containers">
+    <div className="containers" id='single_container'>
       <div className='singleCard-wraper'>
       <div className="singleCard-img">
         <img src={single_product.image} alt="" />
