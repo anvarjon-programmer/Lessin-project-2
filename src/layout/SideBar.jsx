@@ -36,10 +36,10 @@ export const SideBar = () => {
         }
     </ul> */}
                     <div className="links">
-                    <NavLink className="navLink" to='/products'>Product</NavLink>
-                    <NavLink className="navLink" to='/cards'>Cards</NavLink>
-                    <NavLink className="navLink" to='/users'>Users</NavLink>
-                    <NavLink className="navLink" to='/usersInfo'>User'S Comment</NavLink>
+                    <NavLink end className={({isActive}) => isActive ? "navlink--active navLink" : "navLink"} to='/products'>Product</NavLink>
+                    <NavLink className={({isActive}) => isActive ? "navlink--active navLink" : "navLink"} to='/cards'>Cards</NavLink>
+                    <NavLink className={({isActive}) => isActive ? "navlink--active navLink" : "navLink"} to='/users'>Users</NavLink>
+                    <NavLink className={({isActive}) => isActive ? "navlink--active navLink" : "navLink"} to='/usersInfo'>User'S Comment</NavLink>
                     </div>
 
 
